@@ -94,7 +94,7 @@ body {
    }
 }
 .header {
-   background-image: url("/images/header-back.jpg");
+   background-image: url("../images/header-back.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center center;
@@ -170,7 +170,7 @@ body {
          margin-bottom: 40px;
       }
       &-image {
-         background-image: url("/images/slider-img.jpg");
+         background-image: url("../images/slider-img.jpg");
          background-repeat: no-repeat;
          background-position: center center;
          background-size: cover;
@@ -218,7 +218,7 @@ body {
          display: flex;
          justify-content: space-between;
          align-items: center;
-         background-image: url("/images/reward-back.png");
+         background-image: url("../images/reward-back.png");
          background-repeat: no-repeat;
          background-position: center center;
          background-size: contain;
