@@ -18,16 +18,20 @@ h6 {
    margin: 0;
    font-family: "Circe-Bold";
    font-weight: 700;
+   letter-spacing: 2px;
 }
 p {
    font-family: "Circe-Light";
    font-weight: 300;
+   letter-spacing: 2px;
 }
 
 body {
+   //временно добавлю, т.к. нет desktop версии
+   // max-width: 1000px;
    min-width: 320px;
    overflow-x: hidden;
-   margin: 0;
+   margin: 0 auto;
    font-family: "Circe-Regular", "Arial";
    font-weight: 400;
 }
@@ -45,6 +49,7 @@ body {
       margin: 5px 0;
       width: 70%;
       text-align: center;
+      letter-spacing: 6px;
       position: relative;
       & svg {
          position: absolute;
@@ -70,6 +75,7 @@ body {
       margin: 5px 0;
       width: 70%;
       text-align: center;
+      letter-spacing: 6px;
       position: relative;
       & svg {
          position: absolute;
@@ -97,7 +103,7 @@ body {
    background-image: url("../images/header-back.jpg");
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center center;
+   background-position: top center;
    max-width: 100%;
    color: $white;
    box-sizing: border-box;
@@ -111,11 +117,11 @@ body {
       width: 50%;
    }
    &__tel {
-      font-size: 37px;
+      font-size: 32px;
    }
    &__info {
       margin-top: 115px;
-      & h2 {
+      & h1 {
          font-size: 42px;
       }
       & p {
@@ -136,7 +142,8 @@ body {
       flex-direction: column;
       align-items: center;
       & h3 {
-         font-size: 42px;
+         font-size: 36px;
+         margin-bottom: 50px;
       }
    }
 }
@@ -163,7 +170,7 @@ body {
       }
    }
    &__slider {
-      margin-top: 115px;
+      margin-top: 240px;
       &-title {
          font-size: 36px;
          text-align: center;
@@ -252,6 +259,7 @@ body {
    }
    &__image {
       width: 100%;
+      margin: 0 auto;
    }
    &__info {
       display: flex;
@@ -260,7 +268,7 @@ body {
       &-text {
          color: $white;
          margin-right: auto;
-         width: 50%;
+         width: 75%;
          font-size: 22px;
       }
    }
@@ -288,7 +296,7 @@ body {
          margin-top: 20px;
       }
       &__info {
-         h2 {
+         h1 {
             font-size: 30px;
          }
       }
@@ -301,19 +309,24 @@ body {
    }
    .link {
       &__black {
-         font-size: 20px;
+         font-size: 16px;
+         padding: 28px 35px;
          & svg {
             top: 40%;
          }
       }
       &__white {
-         font-size: 20px;
+         font-size: 16px;
+         padding: 28px 35px;
          & svg {
             top: 40%;
          }
       }
    }
    .main {
+      &__slider {
+         margin-top: 115px;
+      }
       &__info-text {
          font-size: 22px;
          max-width: 100%;
